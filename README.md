@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# missions-backend
+Arisen Church's Missions administration panel for managing missions, categories and contributions via Hypercores, Hyperbees and Hyperdrives.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 

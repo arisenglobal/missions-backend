@@ -14,14 +14,14 @@ const AddMission = () => {
   const description = 'Fill out the form below to create a mission';
 
   const breadcrumbs = [{ to: '', text: 'Home' }];
-  const colorOptions = [
-    { value: 'Red', label: 'Red' },
-    { value: 'Blue', label: 'Blue' },
-    { value: 'Green', label: 'Green' },
-    { value: 'Yellow', label: 'Yellow' },
+  const categoryOptions = [
+    { value: 'Water', label: 'Water' },
+    { value: 'Technology', label: 'Technology' },
+    { value: 'Health & Wellness', label: 'Health & Wellness' },
+    { value: 'Freedom', label: 'Freedom' },
   ];
 
-  const [colorValue, setColorValue] = useState();
+  const [categoryValue, setCategoryValue] = useState();
 
   useCustomLayout({ placement: MENU_PLACEMENT.Vertical, layout: LAYOUT.Fluid });
   return (
@@ -98,10 +98,10 @@ const AddMission = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col lg="2" md="3" sm="4">
-                    <Form.Label className="col-form-label">Category Color</Form.Label>
+                    <Form.Label className="col-form-label">Category</Form.Label>
                   </Col>
                   <Col sm="8" md="9" lg="10">
-                    <Select classNamePrefix="react-select" options={colorOptions} value={colorValue} onChange={setColorValue} placeholder="" />
+                    <Select classNamePrefix="react-select" options={categoryOptions} value={categoryValue} onChange={setCategoryValue} placeholder="" />
                   </Col>
                 </Row>
                 <Row className="mb-3">

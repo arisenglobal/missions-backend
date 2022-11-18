@@ -14,12 +14,23 @@ const appRoot = DEFAULT_PATHS.APP.endsWith('/') ? DEFAULT_PATHS.APP.slice(1, DEF
 
 const routesAndMenuItems = {
   mainMenuItems: [
-    
     {
       path: `${appRoot}/dashboard`,
       label: 'Dashboard',
       icon: 'home',
       component: DashboardHome,
+    },
+    {
+      path: `${appRoot}/platform`,
+      label: 'Choose Platform',
+      icon: 'database',
+      component: ChoosePlatform,
+    },
+    {
+      path: `${appRoot}/newPlatform`,
+      label: 'Create New Platform',
+      icon: 'power',
+      component: NewPlatform,
     },
     {
       path: `${appRoot}/missions`,
